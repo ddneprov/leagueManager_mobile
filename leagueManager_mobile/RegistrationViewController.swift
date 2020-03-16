@@ -33,8 +33,7 @@ class RegistrationViewController: UIViewController {
             
             
             let bodyJson = try? JSONSerialization.data(withJSONObject: body)
-            let url = URL(string: "http://localhost:8080/newuser")!
-    
+            let url = URL(string: "http://http://leaguemanagerapp.qjvacms4bu.eu-west-2.elasticbeanstalk.com:8080/newuser")!
         
             var request = URLRequest(url: url)
         
