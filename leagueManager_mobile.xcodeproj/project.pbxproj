@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837708B22432B26300FD3AC4 /* CustomBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837708B12432B26300FD3AC4 /* CustomBarViewController.swift */; };
+		837708B42432B83B00FD3AC4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837708B32432B83B00FD3AC4 /* MainViewController.swift */; };
 		83EAB894241E5A0D00D6F0F7 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EAB893241E5A0D00D6F0F7 /* DesignableView.swift */; };
 		83EAB896241E78FD00D6F0F7 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EAB895241E78FD00D6F0F7 /* RegistrationViewController.swift */; };
 		83F33DC7241D44B400DFC283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F33DC6241D44B400DFC283 /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		56125E977A8E72981583C843 /* Pods_leagueManager_mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_leagueManager_mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		837708B12432B26300FD3AC4 /* CustomBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBarViewController.swift; sourceTree = "<group>"; };
+		837708B32432B83B00FD3AC4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		83EAB893241E5A0D00D6F0F7 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		83EAB895241E78FD00D6F0F7 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		83F33DC3241D44B400DFC283 /* leagueManager_mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leagueManager_mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +92,8 @@
 				83F33DCF241D44B400DFC283 /* leagueManager_mobile.xcdatamodeld */,
 				83EAB893241E5A0D00D6F0F7 /* DesignableView.swift */,
 				83EAB895241E78FD00D6F0F7 /* RegistrationViewController.swift */,
+				837708B12432B26300FD3AC4 /* CustomBarViewController.swift */,
+				837708B32432B83B00FD3AC4 /* MainViewController.swift */,
 			);
 			path = leagueManager_mobile;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 				83F33DD1241D44B400DFC283 /* leagueManager_mobile.xcdatamodeld in Sources */,
 				83EAB894241E5A0D00D6F0F7 /* DesignableView.swift in Sources */,
 				83F33DC9241D44B400DFC283 /* SceneDelegate.swift in Sources */,
+				837708B22432B26300FD3AC4 /* CustomBarViewController.swift in Sources */,
+				837708B42432B83B00FD3AC4 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

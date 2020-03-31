@@ -27,16 +27,19 @@ class RegistrationViewController: UIViewController {
     
     @IBAction func setNewUser(_ sender: Any) {
         if(userName.text != "" && userEmail.text != "" && userPassword.text != ""){
-            let body: [String: Any] = ["userName": userName.text as Any,
+            let body: [String: Any] = ["userFirstName": userName.text as Any,
+                                       "userLastName": userName.text as Any,
                                        "userEmail": userEmail.text as Any,
-                                       "userPassword": userPassword.text as Any]
-            
+                                       "userPassword": userPassword.text as Any,
+                                       "userIsACapitan": 1,
+                                       "userTeamId": 0,
+                                       "userAmplua": "нападающий"]
             
             let bodyJson = try? JSONSerialization.data(withJSONObject: body)
-            let url = URL(string: "http://http://leaguemanagerapp.qjvacms4bu.eu-west-2.elasticbeanstalk.com:8080/newuser")!
-        
+            //let url = URL(string: "http://leaguemanagerapp.qjvacms4bu.eu-west-2.elasticbeanstalk.com/newUser")!
+            let url = URL(string: "http://localhost:8080/player/setPlayer")!
+
             var request = URLRequest(url: url)
-        
         
             request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
             request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")

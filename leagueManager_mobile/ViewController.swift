@@ -17,11 +17,11 @@ class ViewController: UIViewController {
 
     @IBAction func goIn(_ sender: Any) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let registrationViewController = storyBoard.instantiateViewController(identifier: "registration") as! RegistrationViewController
+            let mainViewController = storyBoard.instantiateViewController(identifier: "home") as! MainViewController
         
-        registrationViewController.modalPresentationStyle = .fullScreen
-        
-        self.present(registrationViewController, animated: true,completion: nil)
+            mainViewController.modalPresentationStyle = .fullScreen
+            
+            self.present(mainViewController, animated: true,completion: nil)
     }
     
 //    @IBAction func updateDB(_ sender: Any) {
@@ -34,5 +34,13 @@ class ViewController: UIViewController {
 //
 //        task.resume()
 //    }
+    @IBAction func registration(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let registrationViewController = storyBoard.instantiateViewController(identifier: "registration") as! RegistrationViewController
+    
+        registrationViewController.modalPresentationStyle = .fullScreen
+        
+        self.present(registrationViewController, animated: true,completion: nil)
+    }
 }
 

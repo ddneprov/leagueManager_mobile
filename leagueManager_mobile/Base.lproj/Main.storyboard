@@ -119,7 +119,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="goIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KEU-41-uip"/>
+                                                    <action selector="goIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHg-8x-uIu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -147,7 +147,7 @@
                                                             <color key="titleColor" red="0.58613258599999996" green="0.76791387799999999" blue="0.003013129812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="0a6-IE-b1q" kind="show" id="BKk-an-ViA"/>
+                                                            <action selector="registration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J4e-S1-KTn"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -178,7 +178,7 @@
             <objects>
                 <viewController storyboardIdentifier="registration" id="0a6-IE-b1q" customClass="RegistrationViewController" customModule="leagueManager_mobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gok-t5-sTE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="16" affinity="minX"/>
@@ -186,7 +186,7 @@
                         </userGuides>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qqi-Ic-GHT">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="18334" translatesAutoresizingMaskIntoConstraints="NO" id="Rll-RK-kmA">
                                         <rect key="frame" x="0.0" y="8" width="414" height="150"/>
@@ -323,23 +323,23 @@
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="xkW-SI-PLu">
-                                        <rect key="frame" x="0.0" y="517.5" width="414" height="254"/>
+                                        <rect key="frame" x="0.0" y="517.5" width="414" height="254.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="erP-rx-Umz">
-                                        <rect key="frame" x="0.0" y="779.5" width="414" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="780" width="414" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ouu-a3-vID">
-                                                <rect key="frame" x="106.5" y="0.0" width="201" height="20.5"/>
+                                                <rect key="frame" x="106.5" y="0.0" width="201" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уже есть аккаунт?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2e-fQ-e1L">
-                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PM-Ww-FSd">
-                                                        <rect key="frame" x="151" y="0.0" width="50" height="20.5"/>
+                                                        <rect key="frame" x="151" y="0.0" width="50" height="30"/>
                                                         <state key="normal" title="Войди!">
                                                             <color key="titleColor" red="0.58613258599999996" green="0.76791387799999999" blue="0.003013129812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
@@ -374,6 +374,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghb-jS-DzX" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="957" y="138"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="D5J-4f-uOw">
+            <objects>
+                <viewController storyboardIdentifier="home" id="W4m-7v-Uqh" customClass="MainViewController" customModule="leagueManager_mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L7A-PO-6fO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="irG-jT-zMi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHZ-si-9cF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000" y="138"/>
         </scene>
     </scenes>
     <resources>
