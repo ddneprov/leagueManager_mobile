@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  TeamViewController.swift
 //  leagueManager_mobile
 //
 //  Created by 18177231 on 04/04/2020.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class MainViewController : UITabBarController{
+class TeamViewController : UIViewController{
     
 }
