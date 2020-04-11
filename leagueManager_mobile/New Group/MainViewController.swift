@@ -8,6 +8,17 @@
 
 import UIKit
 
+
+var NAME = String()
+var LASTNAME = String()
+var EMAIL = String()
+var PASSWORD = String()
+var CAPITAN = Int()
+var TEAM_ID = Int()
+var AMPLUA = String()
+
+
 class MainViewController : UITabBarController{
+    
     
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 
-class TeamViewController : UIViewController{
+class TeamViewController : ViewController{
     
+  
 }
