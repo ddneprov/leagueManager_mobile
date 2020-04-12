@@ -12,6 +12,7 @@ class PersonViewController : ViewController{
     
 
     @IBOutlet weak var nameLabel: UILabel!
+
     
     override func viewDidLoad() {
         self.nameLabel.text = NAME + " " + LASTNAME

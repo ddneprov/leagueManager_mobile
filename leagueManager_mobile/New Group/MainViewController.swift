@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+// Player Fields
 var NAME = String()
 var LASTNAME = String()
 var EMAIL = String()
@@ -16,6 +16,9 @@ var PASSWORD = String()
 var CAPITAN = Int()
 var TEAM_ID = Int()
 var AMPLUA = String()
+
+
+var TEAM_NAME = String()
 
 
 class MainViewController : UITabBarController{

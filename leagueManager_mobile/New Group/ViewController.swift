@@ -9,6 +9,7 @@
 import UIKit
 
 var player: Player? = nil
+var team: Team? = nil
 
 class ViewController: UIViewController {
 
@@ -45,6 +46,10 @@ class ViewController: UIViewController {
                             CAPITAN = player!.playerIsACapitan
                             TEAM_ID = player!.playerTeamId
                             AMPLUA = player!.playerAmplua
+                            
+                            
+                            self.getTeam()
+
                            }
                         } catch let error {
                             DispatchQueue.main.async {
@@ -63,6 +68,23 @@ class ViewController: UIViewController {
                   }.resume()
         }
     }
+    
+    
+    func getTeam(){
+        if let url = URL(string: "http://localhost:8080/team/getTeamById?teamId=" + String(TEAM_ID)) {
+                  URLSession.shared.dataTask(with: url) { data, response, error in
+                     if let data = data {
+                        do {
+                           team = try JSONDecoder().decode(Team.self, from: data)
+                           TEAM_NAME = team!.teamName
+                        } catch let error {
+                            print(error)
+                        }
+                     }
+                  }.resume()
+        }
+    }
+    
     
     /**
     # переход на экран регистрации
