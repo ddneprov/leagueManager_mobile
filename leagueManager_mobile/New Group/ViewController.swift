@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //password.isSecureTextEntry = true
+        password.isSecureTextEntry = true
     }
 
     
@@ -34,11 +34,6 @@ class ViewController: UIViewController {
                            player = try JSONDecoder().decode(Player.self, from: data)
                            DispatchQueue.main.async {
                             
-                            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                            let leagueViewController = storyBoard.instantiateViewController(identifier: "tab") as! MainViewController
-                            leagueViewController.modalPresentationStyle = .fullScreen
-                            self.present(leagueViewController, animated: true,completion: nil)
-                            
                             NAME = player!.playerFirstName
                             LASTNAME = player!.playerLastName
                             EMAIL = player!.playerEmail
@@ -49,6 +44,11 @@ class ViewController: UIViewController {
                             
                             
                             self.getTeam()
+                            
+                            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                            let leagueViewController = storyBoard.instantiateViewController(identifier: "tab") as! MainViewController
+                            leagueViewController.modalPresentationStyle = .fullScreen
+                            self.present(leagueViewController, animated: true,completion: nil)
 
                            }
                         } catch let error {

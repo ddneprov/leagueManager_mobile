@@ -13,9 +13,12 @@
 		832D9E552439251F000E0F9E /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D9E542439251F000E0F9E /* TeamViewController.swift */; };
 		832D9E5724392A11000E0F9E /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D9E5624392A11000E0F9E /* PersonViewController.swift */; };
 		8361EF5B2441490A009DBBE1 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361EF5A2441490A009DBBE1 /* Team.swift */; };
-		8361EF5F24427967009DBBE1 /* CustomTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361EF5E24427967009DBBE1 /* CustomTeamTableViewCell.swift */; };
-		8361EF6124427F9A009DBBE1 /* ShowTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361EF6024427F9A009DBBE1 /* ShowTeamViewController.swift */; };
+		8361EF6324436F02009DBBE1 /* TeamNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361EF6224436F02009DBBE1 /* TeamNavigationViewController.swift */; };
+		83957E982443DFB9008CB342 /* CustomTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83957E972443DFB9008CB342 /* CustomTeamTableViewCell.swift */; };
 		83CED686243E731300450D3D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CED685243E731300450D3D /* Player.swift */; };
+		83D2F2CD2443E6F1005059CE /* CustomPlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2F2CC2443E6F1005059CE /* CustomPlayerTableViewCell.swift */; };
+		83D2F2CF2444163D005059CE /* CreateTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2F2CE2444163D005059CE /* CreateTeamViewController.swift */; };
+		83D2F2D1244490A9005059CE /* NewTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2F2D0244490A9005059CE /* NewTeamViewController.swift */; };
 		83EAB896241E78FD00D6F0F7 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EAB895241E78FD00D6F0F7 /* RegistrationViewController.swift */; };
 		83F33DC7241D44B400DFC283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F33DC6241D44B400DFC283 /* AppDelegate.swift */; };
 		83F33DC9241D44B400DFC283 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F33DC8241D44B400DFC283 /* SceneDelegate.swift */; };
@@ -35,9 +38,12 @@
 		832D9E542439251F000E0F9E /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		832D9E5624392A11000E0F9E /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		8361EF5A2441490A009DBBE1 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		8361EF5E24427967009DBBE1 /* CustomTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTeamTableViewCell.swift; sourceTree = "<group>"; };
-		8361EF6024427F9A009DBBE1 /* ShowTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTeamViewController.swift; sourceTree = "<group>"; };
+		8361EF6224436F02009DBBE1 /* TeamNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamNavigationViewController.swift; sourceTree = "<group>"; };
+		83957E972443DFB9008CB342 /* CustomTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTeamTableViewCell.swift; sourceTree = "<group>"; };
 		83CED685243E731300450D3D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		83D2F2CC2443E6F1005059CE /* CustomPlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayerTableViewCell.swift; sourceTree = "<group>"; };
+		83D2F2CE2444163D005059CE /* CreateTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamViewController.swift; sourceTree = "<group>"; };
+		83D2F2D0244490A9005059CE /* NewTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTeamViewController.swift; sourceTree = "<group>"; };
 		83EAB895241E78FD00D6F0F7 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		83F33DC3241D44B400DFC283 /* leagueManager_mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leagueManager_mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F33DC6241D44B400DFC283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +89,9 @@
 				832D9E542439251F000E0F9E /* TeamViewController.swift */,
 				832D9E5624392A11000E0F9E /* PersonViewController.swift */,
 				8329265E24410541000C6FFE /* SecondRegViewController.swift */,
-				8361EF6024427F9A009DBBE1 /* ShowTeamViewController.swift */,
+				8361EF6224436F02009DBBE1 /* TeamNavigationViewController.swift */,
+				83D2F2CE2444163D005059CE /* CreateTeamViewController.swift */,
+				83D2F2D0244490A9005059CE /* NewTeamViewController.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -119,7 +127,8 @@
 				83F33DCF241D44B400DFC283 /* leagueManager_mobile.xcdatamodeld */,
 				83CED685243E731300450D3D /* Player.swift */,
 				8361EF5A2441490A009DBBE1 /* Team.swift */,
-				8361EF5E24427967009DBBE1 /* CustomTeamTableViewCell.swift */,
+				83957E972443DFB9008CB342 /* CustomTeamTableViewCell.swift */,
+				83D2F2CC2443E6F1005059CE /* CustomPlayerTableViewCell.swift */,
 			);
 			path = leagueManager_mobile;
 			sourceTree = "<group>";
@@ -230,18 +239,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8361EF5B2441490A009DBBE1 /* Team.swift in Sources */,
+				83D2F2CD2443E6F1005059CE /* CustomPlayerTableViewCell.swift in Sources */,
 				83EAB896241E78FD00D6F0F7 /* RegistrationViewController.swift in Sources */,
+				83D2F2CF2444163D005059CE /* CreateTeamViewController.swift in Sources */,
 				832D9E552439251F000E0F9E /* TeamViewController.swift in Sources */,
 				83F33DCB241D44B400DFC283 /* ViewController.swift in Sources */,
 				83F33DC7241D44B400DFC283 /* AppDelegate.swift in Sources */,
 				832D9E5324391418000E0F9E /* LeagueViewController.swift in Sources */,
 				832D9E512438DFF9000E0F9E /* MainViewController.swift in Sources */,
+				8361EF6324436F02009DBBE1 /* TeamNavigationViewController.swift in Sources */,
 				83F33DD1241D44B400DFC283 /* leagueManager_mobile.xcdatamodeld in Sources */,
-				8361EF5F24427967009DBBE1 /* CustomTeamTableViewCell.swift in Sources */,
+				83D2F2D1244490A9005059CE /* NewTeamViewController.swift in Sources */,
+				83957E982443DFB9008CB342 /* CustomTeamTableViewCell.swift in Sources */,
 				832D9E5724392A11000E0F9E /* PersonViewController.swift in Sources */,
 				83CED686243E731300450D3D /* Player.swift in Sources */,
 				83F33DC9241D44B400DFC283 /* SceneDelegate.swift in Sources */,
-				8361EF6124427F9A009DBBE1 /* ShowTeamViewController.swift in Sources */,
 				8329265F24410541000C6FFE /* SecondRegViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

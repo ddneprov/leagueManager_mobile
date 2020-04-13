@@ -8,36 +8,34 @@
 
 import UIKit
 
+var teammates = [Player]()
 
-class TeamViewController : UIViewController{
+class TeamViewController : UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-    @IBOutlet weak var noTeamFlag: UIStackView!
-    @IBOutlet weak var teamLogo: UIImageView!
-    @IBOutlet weak var createTeam: UIButton! // активная/неактивная
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var teamName: UILabel!
+    
     
     override func viewDidLoad() {
-        
-        
-        teamLogo.isHidden = true
-        noTeamFlag.isHidden = true
         super.viewDidLoad()
-        if (TEAM_ID == 0){
-            teamLogo.isHidden = false
-            noTeamFlag.isHidden = false
+        teamName.text = TEAM_NAME
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
 
-        }else{
-            presentSecondViewController()
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+            return teammates.count
+    }
+
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellplayer") as! CustomPlayerTableViewCell
+            
+            cell.name.text = teammates[indexPath.row].playerFirstName + " " + teammates[indexPath.row].playerLastName
+            cell.amplua.text = teammates[indexPath.row].playerAmplua
+            cell.number.text = String(indexPath.row + 1) + "."
+
+            return cell
         }
     }
-    
-    
-    func presentSecondViewController() {
-           let storyboard = UIStoryboard(name: "Main", bundle: nil)
-           let secondVC = storyboard.instantiateViewController(identifier: "showteam")
-           
-           secondVC.modalPresentationStyle = .fullScreen
-           secondVC.modalTransitionStyle = .crossDissolve
-           
-           present(secondVC, animated: true, completion: nil)
-    }
-}
+

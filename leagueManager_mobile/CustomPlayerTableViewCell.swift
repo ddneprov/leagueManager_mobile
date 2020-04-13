@@ -1,5 +1,5 @@
 //
-//  CustomTeamTableViewCell.swift
+//  CustomPlayerTableViewCell.swift
 //  leagueManager_mobile
 //
 //  Created by 18177231 on 13/04/2020.
@@ -7,13 +7,14 @@
 //
 
 import UIKit
-//cellteam
-class CustomTeamTableViewCell: UITableViewCell {
-
+//cellplayer
+class CustomPlayerTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var view: UIView!
-    @IBOutlet weak var picture: UIImageView!
-    @IBOutlet weak var team: UILabel!
-    @IBOutlet weak var points: UILabel!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var number: UILabel!
+    @IBOutlet weak var amplua: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

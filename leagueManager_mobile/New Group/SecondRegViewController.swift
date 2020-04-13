@@ -25,8 +25,6 @@ class SecondRegViewController : UIViewController{
     @IBAction func setBewPlayer(_ sender: Any) {
                 if(playerName.text != "" && playerLastName.text != ""){
                     
-                    
-        
                     let body: [String: Any] = ["playerFirstName": playerName.text as Any,
                                                "playerLastName": playerLastName.text as Any,
                                                "playerEmail": playerEmail as Any,
@@ -61,9 +59,13 @@ class SecondRegViewController : UIViewController{
                                 guard let data = data, error == nil else { return }
                                 print(String(data: data, encoding: .utf8)!)
                             }
+
+
+
+                    performSegue(withIdentifier: "createteam", sender: self)
+
+                
                     task.resume()
-                    
-                    performSegue(withIdentifier: "toTab2", sender: self)
                 }
     }
 }

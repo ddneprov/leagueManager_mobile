@@ -10,27 +10,33 @@ import UIKit
 
 var teams = [Team]()
 
-class LeagueViewController : UIViewController{
+class LeagueViewController : UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getTeams()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
-    private func getTeams(){
-        if let url = URL(string: "http://localhost:8080/team/getTeams") {
-                  URLSession.shared.dataTask(with: url) { data, response, error in
-                     if let data = data {
-                        do {
-                           teams = try JSONDecoder().decode([Team].self, from: data)
-                           DispatchQueue.main.async {
-                                print(teams)
-                           }
-                        } catch let error {
-                            print(error)
-                        }
-                     }
-                  }.resume()
-        }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return teams.count
     }
+       
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellteam") as! CustomTeamTableViewCell
+        
+        cell.points.text = String(36 - 3*indexPath.row)
+        cell.team.text = teams[indexPath.row].teamName
+        cell.picture.image =  UIImage(named: String(indexPath.row + 1))
+                
+        return cell
+        
+    }
+
+    
+    
 }
