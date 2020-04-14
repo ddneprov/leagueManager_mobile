@@ -43,52 +43,75 @@ class NewTeamViewController: UIViewController, UITableViewDelegate, UITableViewD
                     task.resume()
         
         
-        
-        for i in soloplayers{
-            if (i.playerTeamId == 0){
-                changeTeam(playerId: i.playerId, teamId: 4) //
-            }
-        }
+
+//        for i in soloplayers{
+//            if (i.playerTeamId == 0){
+//                changeTeam(playerId: i.playerId, teamId: 4) //
+//            }
+       
+    }
         
         
         
         // меняем команду самому юзеру для этого дергаем его из БД
-        if let url = URL(string: "http://localhost:8080/player/getByEmail?playerEmail=" + EMAIL) {
-                  URLSession.shared.dataTask(with: url) { data, response, error in
-                     if let data = data {
-                        do {
-                           player2 = try JSONDecoder().decode(Player.self, from: data)
-                        } catch let error {
-                            print(error)
-                        }
-                     }
-                  }.resume()
-        }
-        
-        
-        changeTeam(playerId: player2!.playerId, teamId: 4) //
-    }
-   
+//        if let url = URL(string: "http://localhost:8080/player/getByEmail?playerEmail=" + EMAIL) {
+//                  URLSession.shared.dataTask(with: url) { data, response, error in
+//                     if let data = data {
+//                        do {
+//                           player2 = try JSONDecoder().decode(Player.self, from: data)
+//                           print(player2)
+//                        } catch let error {
+//                            print(error)
+//                        }
+//                     }
+//                  }.resume()
+//        }
+//
+//        changeTeam(playerId: player2!.playerId, teamId: 4)
+//    }
+//
+//
+//    func changeTeam(playerId : Int, teamId : Int){
+//        let url = URL(string: "http://localhost:8080/player/changeTeam?playerId=" + String(playerId) + "&teamId=" + String(teamId))!
+//
+//                    var request = URLRequest(url: url)
+//
+//                    request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+//                    request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")
+//
+//                    request.httpMethod = "POST"
+//
+//                    let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
+//                                guard let data = data, error == nil else { return }
+//                                print(String(data: data, encoding: .utf8)!)
+//                            }
+//
+//                    task.resume()
+//    }
+
+
     
-    func changeTeam(playerId : Int, teamId : Int){
-        let url = URL(string: "http://localhost:8080/player/changeTeam?playerId=" + String(playerId) + "&teamId=" + String(teamId))!
-        
-                    var request = URLRequest(url: url)
-        
-                    request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-                    request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")
-        
-                    request.httpMethod = "POST"
-        
-                    let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
-                                guard let data = data, error == nil else { return }
-                                print(String(data: data, encoding: .utf8)!)
-                            }
-        
-                    task.resume()
-    }
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     var numbers : [Bool] = []
 
     override func viewDidLoad() {
