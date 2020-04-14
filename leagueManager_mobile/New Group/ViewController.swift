@@ -49,7 +49,6 @@ class ViewController: UIViewController {
                             let leagueViewController = storyBoard.instantiateViewController(identifier: "tab") as! MainViewController
                             leagueViewController.modalPresentationStyle = .fullScreen
                             self.present(leagueViewController, animated: true,completion: nil)
-
                            }
                         } catch let error {
                             DispatchQueue.main.async {
